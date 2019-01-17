@@ -18,6 +18,8 @@ public class Loginsteps {
 	@When("^user open \"(.*)\" browser$")
 	public String Open_browser(String browser)
 	{
+		System.out.println("Converting the code eclipse into github");
+		
 		if(browser.equalsIgnoreCase("chrome"))
 		{
 			System.setProperty("webdriver.chrome.driver","D:\\Selenium data\\chromedriver_win32(1)\\chromedriver.exe");
@@ -25,6 +27,7 @@ public class Loginsteps {
 			System.out.println("Chrome browser open successfully");
 		}
 		return browser;
+		
 	}
 	
 	 @And("^user enters application url \"(.*)\"$")
